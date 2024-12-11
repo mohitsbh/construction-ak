@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    font-size: 65%;
+    scroll-behavior: smooth;
+    transition: all ease .2s;
+    overflow-x: hidden;
+
+}
+body{
+    background-color: black;
+}
+
+html a {
+    text-decoration: none;
+}
+
+.hr {
+    width: 15%;
+    background-color: brown;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+/* navbar section start */
+
+
+
+.nav-bar {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+
+}
+
+.nav-bar h1 { 
+    /* display: block; */
+     font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    width: 100%;
+}
+
+.nav-bar h1 span {
+    font-size: 28px;
+    color: brown;
+}
+
+.nav-bar .nav-attributes a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    margin-left: 2rem;
+
+}
+
+.nav-bar .nav-attributes a:hover {
+    color: brown;
+}
+
+.nav-bar .nav-attributes a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: brown;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.nav-bar .nav-attributes a:hover::after {
+    width: 100%;
+} 
+
+.container .icons div {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.container .icons div:hover {
+    color: brown;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+}
+
+.search-box {
+    width: 50%;
+    position: absolute;
+    top: -100%;
+    right: 5rem;
+    padding: 0.5rem;
+}
+
+
+.search-box input {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    outline: brown;
+    border: 1px solid brown;
+    color: brown;
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+}
+
+.search-box.active {
+    transition: all ease .5s;
+    top: 100%;
+}
+
+.navbar.active {
+    right: 0;
+}
+
+
+
+
+
+/* .search-bar {
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.search-bar .search {
+    color: beige;
+    z-index: 1000;
+} */
+
+
+/* navbar section end */
+
+
+/* header section start */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    background-image: url("images/istockphoto-1192583619-1024x1024.jpg");
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.container .header-text {
+    padding-top: 250px;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .header-text h1 {
+    font-size: 70px;
+    color: brown;
+    font-weight: 800;
+}
+
+.container .header-text p {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* header section end */
+
+
+
+/* about section start */
+
+.about {
+    padding: 2rem 7%;
+}
+
+.about-heading {
+    text-align: center;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.about-heading h1 {
+    color: rgb(250, 246, 246);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* .about-heading .hr {
+    width: 15%;
+    background-color: brown;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: .5rem;
+} */
+
+.about-heading .hr {
+    width: 15%;
+    background-color: brown;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+
+.main-inner-about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+
+}
+
+.inner-about {
+    flex: 1 1 300px;
+    padding: 1rem;
+}
+
+.inner-about .about-images img {
+    width: 100%;
+}
+
+.about-inner-content {
+    padding: 2rem 0;
+}
+
+.about-inner-content h2 {
+    color: white;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.about-inner-content p {
+    color: white;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/* about section end */
+
+
+/* services section start */
+
+.why-us {
+    /* background-image: url('images/istockphoto-1128240576-1024x1024.jpg'); */
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100%;
+    padding: 2rem 7%;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+
+}
+
+.why-us-heading {
+    text-align: center;
+}
+
+.why-us-heading h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+}
+
+.main-inner-us {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.main-inner {
+    flex: 1 1 300px;
+    padding: 2rem 1rem;
+    /* border: 1px solid black; */
+}
+
+
+
+.icon-text-main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* text-align: center; */
+}
+
+.inner-content {
+    padding: 0 0.5rem;
+}
+
+.inner-icon i {
+    color: rgb(250, 244, 244);
+    font-size: 22px;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.inner-content-text h2 {
+    color: rgb(245, 241, 241);
+    font-size: 25px;
+    padding: 1rem 0;
+    font-weight: 300;
+}
+
+.inner-content-text p {
+    color: #eaedf0;
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+
+/* services section end */
+
+/* project section start */
+
+.our-featured {
+    padding: 2rem 7%;
+}
+
+.feature-heading {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.feature-heading h1 {
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.feature-heading h1 span {
+    color: brown;
+}
+
+.feature-heading .hr{
+    width: 25%;
+    background-color: brown;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+
+.main-featured {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.inner-featured {
+    flex: 1 1 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* .feature-image img:hover img .feature-icons{
+    right:4rem;
+} */
+.inner-featured .feature-icons {
+    right: 4rem;
+    transition: 0.5s;
+}
+
+.feature-icons {
+    position: absolute;
+    top: 3rem;
+    right: -400%;
+    /* opacity: 0;
+    z-index: 100; */
+}
+
+.feature-icons i {
+    padding: 1rem;
+    font-size: 18px;
+    background-color: #afa6a6;
+    border: 1px solid white;
+    color: white;
+}
+
+.feature-icons i:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+/* project section end */
+
+
+/* contact section start */
+
+.footer {
+    padding: 4rem 7%;
+    width: 100%;
+    background-color: black;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-inner-content {
+    flex: 1 1 280px;
+    padding: 1rem 1rem;
+}
+
+.footer-inner-content h2 {
+    color: #fff;
+    font-size: 20px;
+    padding: 1.5rem 0;
+}
+
+.footer-inner-content p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-inner-content a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+
+/* contact section end */
+
+
+
+/* meadia quries */
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    #menu {
+        display: initial;
+    }
+
+    .navbar {
+        padding: 2rem;
+    }
+
+    .nav-attributes {
+        position: absolute;
+        top: 100%;
+        background: var(--navbar-color);
+        width: 30rem;
+        right: -100%;
+        height: 100vh;
+    }
+
+    .nav-attributes.active {
+        right: 0;
+    }
+
+    .nav-attributes a {
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+        border: 5px solid var(--primar-color);
+        outline: var(--primar-color);
+        border-radius: 10px;
+        right: 0;
+        background: #fff;
+        color: black;
+
+    }
+
+    .nav-attributes a:hover {
+        color: #efbb20;
+    }
+
+    .search-box {
+        width: 100%;
+        right: 0rem;
+    }
+
+
+}
